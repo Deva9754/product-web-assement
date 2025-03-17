@@ -1,21 +1,30 @@
-// import AppBar from "@mui/material/AppBar";
-// import Toolbar from "@mui/material/Toolbar";
-// import Typography from "@mui/material/Typography";
-// import Avatar from "@mui/material/Avatar";
-// import IconButton from "@mui/material/IconButton";
-// import MenuIcon from "@mui/icons-material/Menu";
+import { AppBar, Toolbar, Typography, IconButton, Avatar, Box } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
-// function Navbar({ toggleSidebar }) {
-//   return (
-//     <AppBar position="static" color="primary">
-//       <Toolbar className="flex justify-between">
-//         <IconButton edge="start" color="inherit" onClick={toggleSidebar}>
-//           <MenuIcon />
-//         </IconButton>
-//         <Typography variant="h6">My Webpage</Typography>
-//         <Avatar alt="User Profile" src="https://via.placeholder.com/40" />
-//       </Toolbar>
-//     </AppBar>
-//   );
-// }
-// export default Navbar;
+const Navbar = ({ toggleDrawer }) => {
+  return (
+    <AppBar position="fixed" sx={{ backgroundColor: "#1E293B", padding: "0 16px" }}>
+      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+        {/* Left Section: Logo & Website Name */}
+        <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <IconButton edge="start" color="inherit" onClick={toggleDrawer}>
+            <MenuIcon />
+          </IconButton>
+          <Avatar src="https://via.placeholder.com/40" alt="Logo" sx={{ width: 40, height: 40 }} />
+          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+            Product Management
+          </Typography>
+        </Box>
+
+        {/* Right Section: User Profile */}
+        <Avatar
+          src="https://randomuser.me/api/portraits/men/45.jpg"
+          alt="User Profile"
+          sx={{ width: 40, height: 40, cursor: "pointer", border: "2px solid #F8FAFC" }}
+        />
+      </Toolbar>
+    </AppBar>
+  );
+};
+
+export default Navbar;
