@@ -1,7 +1,6 @@
 import { Table, Space, Button } from "antd";
 
 const ProductTable = ({ products, isCompared, handleCompare }) => {
-  // Define table columns
   const columns = [
     { 
       title: "Title", 
