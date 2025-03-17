@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Table, Button, Modal } from "antd";
 import { useNavigate } from "react-router-dom";
 
-function CompareProducts({ compareList = [], setCompareList, allProducts }) {
+const CompareProducts = ({ compareList = [], setCompareList, allProducts })=> {
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [availableProducts, setAvailableProducts] = useState([]);
