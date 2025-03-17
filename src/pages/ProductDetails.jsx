@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ProductTable from "../components/ProductsTable.jsx";
 import Loader from "../components/Loader.jsx";
 
-function ProductDetails({ allProducts, setAllProducts, compareList, setCompareList }) {
+const ProductDetails = ({ allProducts, setAllProducts, compareList, setCompareList })=> {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
