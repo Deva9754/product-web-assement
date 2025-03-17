@@ -5,7 +5,6 @@ const Navbar = ({ toggleDrawer }) => {
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "#1E293B", padding: "0 16px" }}>
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-        {/* Left Section: Logo & Website Name */}
         <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <IconButton edge="start" color="inherit" onClick={toggleDrawer}>
             <MenuIcon />
@@ -16,7 +15,6 @@ const Navbar = ({ toggleDrawer }) => {
           </Typography>
         </Box>
 
-        {/* Right Section: User Profile */}
         <Avatar
           src="https://randomuser.me/api/portraits/men/45.jpg"
           alt="User Profile"
