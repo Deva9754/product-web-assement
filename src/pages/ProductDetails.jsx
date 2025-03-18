@@ -36,8 +36,8 @@ const ProductDetails = ({ allProducts, setAllProducts, compareList, setCompareLi
   };
 
   return (
-    <div>
-      <h2 className="text-2xl font-semibold mb-4">Product Details</h2>
+<div className="min-h-screen bg-gray-900 text-white p-6">
+<h2 className="text-2xl font-semibold mb-4">Product Details</h2>
 
       {loading ? <Loader /> : <ProductTable products={allProducts} isCompared={isCompared} handleCompare={handleCompare} />}
     </div>

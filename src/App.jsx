@@ -9,7 +9,6 @@ function App() {
   const [compareList, setCompareList] = useState([]); // Ensure this exists
 
   useEffect(() => {
-    // Fetch Products on Load
     fetch("https://dummyjson.com/products")
       .then((res) => res.json())
       .then((data) => setAllProducts(data.products))

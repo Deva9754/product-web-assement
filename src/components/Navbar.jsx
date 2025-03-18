@@ -9,14 +9,14 @@ const Navbar = ({ toggleDrawer }) => {
           <IconButton edge="start" color="inherit" onClick={toggleDrawer}>
             <MenuIcon />
           </IconButton>
-          <Avatar src="https://via.placeholder.com/40" alt="Logo" sx={{ width: 40, height: 40 }} />
+          <Avatar src="https://cdn-icons-png.freepik.com/256/10462/10462788.png?semt=ais_hybrid" alt="Logo" sx={{ width: 40, height: 40 }} />
           <Typography variant="h6" sx={{ fontWeight: "bold" }}>
             Product Management
           </Typography>
         </Box>
 
         <Avatar
-          src="https://randomuser.me/api/portraits/men/45.jpg"
+          src=""
           alt="User Profile"
           sx={{ width: 40, height: 40, cursor: "pointer", border: "2px solid #F8FAFC" }}
         />
