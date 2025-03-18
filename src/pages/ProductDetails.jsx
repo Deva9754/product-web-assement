@@ -20,10 +20,8 @@ const ProductDetails = ({ allProducts, setAllProducts, compareList, setCompareLi
       });
   }, [setAllProducts]);
 
-  // Check if product is in compare list
   const isCompared = (id) => compareList.some((item) => item.id === id);
 
-  // Add product to compare
   const handleCompare = (product) => {
     if (!isCompared(product.id)) {
       if (compareList.length < 4) {
