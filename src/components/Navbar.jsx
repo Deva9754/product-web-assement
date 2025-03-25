@@ -48,7 +48,7 @@ const Navbar = ({ toggleDrawer }) => {
   const open = Boolean(anchorEl);
   const user = {
     name: "User", avatar: "", role: "Product Manager",
-    // notifications: 4, messages: 2
+    notifications: 4, messages: 2
   };
 
   return (
