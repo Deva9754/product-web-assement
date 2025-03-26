@@ -2,9 +2,7 @@
 
 // const Loader = () => (
 //   <Box display="flex" justifyContent="center" alignItems="center" height="50vh">
-//     <CircularProgress color="primary" size={60} />
-//   </Box>
-// );
+
 
 
 import { CircularProgress, Box, Fade } from "@mui/material";
