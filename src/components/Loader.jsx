@@ -6,8 +6,6 @@
 //   </Box>
 // );
 
-// export default Loader;
-
 
 import { CircularProgress, Box, Fade } from "@mui/material";
 
