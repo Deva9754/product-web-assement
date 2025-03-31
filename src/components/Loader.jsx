@@ -2,7 +2,7 @@
 
 
 
-import { CircularProgress, Box, Fade } from "@mui/material";
+// import { CircularProgress, Box, Fade } from "@mui/material";
 
 const Loader = ({ loading = true }) => (
   <Fade in={loading} timeout={300}>
