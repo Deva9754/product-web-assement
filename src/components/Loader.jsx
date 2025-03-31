@@ -24,4 +24,4 @@ const Loader = ({ loading = true }) => (
   </Fade>
 );
 
-export default Loader
+export default Loader;
